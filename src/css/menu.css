@@ -8,3 +8,14 @@ ul {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .active-link {
+    font-weight: bold;
+    color : rgb(26, 201, 79);
+    cursor: pointer;
+  }
