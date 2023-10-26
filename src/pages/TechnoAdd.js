@@ -65,7 +65,7 @@ export default function TechnoAdd(props) {
             onChange={(evt) => handleChange(evt)}
           ></textarea>
           <br />
-          <input type="submit" value="Add Techno" className="btn" />
+          <input type="submit" value="Ajouter Techno" className="btn" />
         </form>
       </div>
       <br />
