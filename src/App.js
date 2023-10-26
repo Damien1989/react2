@@ -13,8 +13,10 @@ function App() {
   const [technos, setTechnos] = useState([]);
 
   function handleAddTechno(techno) {
-    console.log('handleAddTechno', techno)
+    console.log('handleAddTechno', techno);
+    setTechnos([...technos, techno]);
   }
+
 
 
   return (
@@ -22,7 +24,7 @@ function App() {
     <Menu />
       <Routes>
         <Route path="/" element= {<Home /> } />
-        <Route path="/add" element= {<TechnoAdd handleAddTechno={handleAddTechno} /> } />
+        <Route path="/add" element={<TechnoAdd handleAddTechno={handleAddTechno} />} />
         <Route path="/list" element= {<TechnoList /> } />
       </Routes>
    </>
