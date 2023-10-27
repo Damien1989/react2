@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import Home from './pages/Home';
 import Menu from './components/Menu';
+import Footer from './components/Footer';
 import TechnoAdd from './pages/TechnoAdd';
 import TechnoList from './pages/TechnoList';
 import { useLocalStorage } from "./hooks/useLocalStorage";
@@ -45,6 +46,7 @@ function App() {
         <Route path="/add" element={<TechnoAdd handleAddTechno={handleAddTechno} />} />
         <Route path="/list" element= {<TechnoList technos={technos} handleDeleteTechno={handleDeleteTechno} /> } />
       </Routes>
+      <Footer />
    </>
   );
 }
